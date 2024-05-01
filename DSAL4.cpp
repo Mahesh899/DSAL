@@ -59,8 +59,9 @@ int bst::height(node *root) {
 void bst::create() {
 	node *curr,*temp;
 	int ans=1;
-	cout<<"enter data:";
+	
 	do {
+	    cout<<"enter data:";
 		curr=new node;
 		cin>>curr->data;
 		curr->left=curr->right=NULL;
@@ -90,7 +91,7 @@ void bst::create() {
 				}
 			}
 		}
-		cout<<"want to continue:";
+		cout<<"want to continue\n1.Yes\n2.No:";
 		cin>>ans;
 	}while(ans==1);
 }
@@ -218,5 +219,4 @@ int main() {
 	}while(ch!=0);
 	return 0;
 }
-
 
